@@ -30,7 +30,7 @@ public class Sede{
         int mayor = examenes.get(0).getNota();
         
         // calcular el valor mayor (corregir: y si existen dos notas iguales)
-        for (int i = 0; i < examenes.length; i++){
+        for (int i = 0; i < examenes.size(); i++){
             if (examenes.get(i).getNota() > mayor){
                 mayor = examenes.get(i).getNota();
             }
@@ -44,7 +44,7 @@ public class Sede{
         int menor = examenes.get(0).getNota();
         
         // calcular el menor valor (corregir: y si existen dos notas iguales)
-        for (int i = 0; i < examenes.length; i++){
+        for (int i = 0; i < examenes.size(); i++){
             if (examenes.get(i).getNota() < menor){
                 menor = examenes.get(i).getNota();
             }

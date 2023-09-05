@@ -17,6 +17,25 @@ public class Notas{
     }
 
     public int getCalificacion(){
+        return this.calificacion;
+    }
+
+    public int getPromedio(){
+        int n = this.examenes.size();
+        
+        int suma = 0;
+
+        for (Curso c : this.examenes) {
+            suma += c.getCalificacion();
+        }
+
+        if (n == 0) { 
+            n = 1;
+        }
+        return (suma / n);
+    }
+
+    public int getMediana(){
         
     }
 }
