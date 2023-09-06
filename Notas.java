@@ -36,6 +36,12 @@ public class Notas{
     }
 
     public int getMediana(){
-        
+        if(examenes.size() % 2 == 0){
+            int sumaMedios = numeros[examenes.size()/2] + numeros[examenes.size()/2 - 1]; 
+            mediana = (double)sumaMedios / 2; 
+        } else {
+            mediana = numeros[examenes.size()/2];
+        }
+        return mediana;
     }
 }
